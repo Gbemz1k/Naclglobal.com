@@ -1,0 +1,26 @@
+# Temp/intermediate files (except oil data needed for site)
+.tmp/*
+!.tmp/oil_data.json
+
+# Large PDFs (source data, not needed for deployment)
+*.pdf
+
+# Screenshots used during development
+screen port.png
+port.png
+foli.png
+capital.png
+corp struct.png
+investor pipe.png
+
+# Brand assets folder (keep logo only)
+brand_assets/
+
+# Environment / credentials
+.env
+credentials.json
+token.json
+
+# OS files
+Thumbs.db
+.DS_Store

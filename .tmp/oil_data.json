@@ -1,0 +1,73 @@
+{
+  "prices": {
+    "wti": 95.16,
+    "wti_change": -0.60,
+    "brent": 100.84,
+    "brent_change": 0.38,
+    "bonny_light": 102.34,
+    "bonny_change": 0.42,
+    "natural_gas": 4.15,
+    "ng_change": 0.08
+  },
+  "news": [
+    {
+      "title": "Goldman hikes average Brent oil forecast to over $100 a barrel for March",
+      "source": "Reuters",
+      "date": "Mar 13, 2026",
+      "category": "Oil Markets"
+    },
+    {
+      "title": "Banks Hike Oil Price Forecasts, and Some See $150 Crude",
+      "source": "OilPrice.com",
+      "date": "Mar 13, 2026",
+      "category": "Oil Markets"
+    },
+    {
+      "title": "Oil Market Report - March 2026",
+      "source": "IEA",
+      "date": "Mar 12, 2026",
+      "category": "Oil Markets"
+    },
+    {
+      "title": "Nigeria Targets 1.8M BPD as Oil & Gas Momentum Builds in 2026",
+      "source": "Energy Capital & Power",
+      "date": "Mar 10, 2026",
+      "category": "Nigeria O&G"
+    },
+    {
+      "title": "Outlook 2026: Renewal and growth in Nigeria's upstream sector",
+      "source": "Petroleum Economist",
+      "date": "Jan 13, 2026",
+      "category": "Nigeria O&G"
+    },
+    {
+      "title": "Nigeria announces licensing round offering 50 upstream oil and gas blocks",
+      "source": "Energies Media",
+      "date": "Jan 11, 2026",
+      "category": "Nigeria O&G"
+    },
+    {
+      "title": "Africa's oil and gas reforms unlock investment surge across key producers",
+      "source": "World Oil",
+      "date": "Dec 31, 2025",
+      "category": "Nigeria O&G"
+    },
+    {
+      "title": "Oil (USCrude) Price Forecast for Today, Tomorrow, Next Week",
+      "source": "LiteFinance",
+      "date": "Mar 13, 2026",
+      "category": "Oil Markets"
+    }
+  ],
+  "market_context": {
+    "headline": "Strait of Hormuz disruptions drive prices higher",
+    "detail": "Brent settled above $100/bbl for the first time since Sept 2023. Petroleum shipments through the Strait of Hormuz have fallen sharply, with some Middle East production shut-in. EIA forecasts prices above $95/bbl for the next two months before easing below $80/bbl in Q3.",
+    "eia_forecast_q3": 78,
+    "eia_forecast_2027": 64,
+    "wti_52w_low": 54.98,
+    "wti_52w_high": 119.48,
+    "brent_52w_low": 58.40,
+    "brent_52w_high": 119.50
+  },
+  "updated": "2026-03-13T20:22:00Z"
+}
