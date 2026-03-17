@@ -1,0 +1,22 @@
+{
+  "name": "shego-holdings-portfolio",
+  "version": "1.0.0",
+  "description": "Shego Holdings portfolio dashboard - West Africa upstream O&G",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -p 8080",
+    "build": "echo 'Static site — no build step required'",
+    "refresh-data": "python tools/fetch_oil_data.py"
+  },
+  "keywords": ["shego", "portfolio", "dashboard", "oil-gas", "nigeria"],
+  "author": "Gbemz1k",
+  "license": "UNLICENSED",
+  "homepage": "https://shegoportfolio.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gbemz1k/SHEGO-holdings-port.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
