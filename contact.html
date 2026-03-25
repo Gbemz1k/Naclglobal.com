@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NaCl Remote to schedule a consultation about hiring remote talent from Kenya or to join our talent network.">
+  <title>Contact Us | NaCl Remote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2386bc25'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='black' font-family='Open Sans,sans-serif' font-size='14' font-weight='800'>Nr</text></svg>">
+  <style>
+    .contact-page-section { padding: 80px 0 60px; background: #fff; }
+    .contact-top-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-bottom: 80px; }
+    .contact-top-grid .contact-heading { font-family: 'Open Sans', sans-serif; font-size: 2rem; font-weight: 300; color: var(--black); margin-bottom: 28px; letter-spacing: -0.01em; }
+    .contact-top-grid .contact-detail { font-size: 0.9375rem; color: #777; line-height: 2; margin-bottom: 4px; }
+    .contact-top-grid .contact-detail a { color: #777; transition: color 0.3s; }
+    .contact-top-grid .contact-detail a:hover { color: var(--green); }
+    .contact-social-icons { display: flex; gap: 20px; margin-top: 24px; }
+    .contact-social-icons a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: var(--black); font-size: 1.125rem; transition: color 0.3s; }
+    .contact-social-icons a:hover { color: var(--green); }
+    .contact-map { width: 100%; height: 280px; overflow: hidden; border: 1px solid #eee; }
+    .contact-map iframe { width: 100%; height: 100%; border: 0; }
+    .contact-divider { width: 100%; height: 1px; background: #eee; margin-bottom: 60px; }
+    .contact-form-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: start; max-width: 720px; }
+    .contact-form-area .form-heading { font-family: 'Open Sans', sans-serif; font-size: 1.75rem; font-weight: 300; color: var(--black); margin-bottom: 8px; }
+    .contact-form-area .form-subtext { font-size: 0.9375rem; color: #777; margin-bottom: 28px; line-height: 1.7; }
+    .contact-form-area .form-row-heirs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .contact-form-area input, .contact-form-area select, .contact-form-area textarea { width: 100%; padding: 12px 16px; font-family: 'Open Sans', sans-serif; font-size: 0.875rem; color: var(--text-primary); background: #fff; border: 1px solid #d0d0ce; outline: none; transition: border-color 0.3s; }
+    .contact-form-area input::placeholder, .contact-form-area textarea::placeholder { color: #aaa; font-size: 0.875rem; }
+    .contact-form-area input:focus, .contact-form-area select:focus, .contact-form-area textarea:focus { border-color: var(--green); }
+    .contact-form-area .form-group-heirs { margin-bottom: 16px; }
+    .contact-form-area textarea { min-height: 140px; resize: vertical; }
+    .contact-form-area .form-terms { font-size: 0.8125rem; color: #999; line-height: 1.6; margin: 20px 0 24px; }
+    .contact-form-area .form-terms a { color: var(--green); font-weight: 600; }
+    .contact-form-area .form-terms a:hover { text-decoration: underline; }
+    .btn-submit { display: inline-block; padding: 12px 36px; background: var(--green); color: var(--black); font-family: 'Open Sans', sans-serif; font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border: none; cursor: pointer; transition: background 0.3s; }
+    .btn-submit:hover { background: var(--green-dark); }
+    .social-svg { width: 20px; height: 20px; fill: currentColor; }
+    .book-call-section { margin-top: 60px; padding: 48px; background: var(--bg-gray); text-align: center; }
+    .book-call-section h3 { font-size: 1.5rem; font-weight: 300; color: var(--black); margin-bottom: 12px; }
+    .book-call-section p { font-size: 0.9375rem; color: var(--text-secondary); margin: 0 auto 24px; max-width: 500px; }
+    @media (max-width: 768px) {
+      .contact-top-grid, .contact-form-grid { grid-template-columns: 1fr; gap: 32px; }
+      .contact-form-area .form-row-heirs { grid-template-columns: 1fr; }
+      .contact-map { height: 220px; }
+      .contact-page-section { padding: 60px 0 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="NaCl Remote" style="height:55px;width:auto;display:block;border-radius:6px;padding:4px;background:transparent;mix-blend-mode:screen;filter:invert(1) hue-rotate(180deg) brightness(1.5);">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="hire-talent.html">Hire Talent</a>
+        <a href="for-talent.html">For Talent</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="btn nav-cta active">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label">Contact</span>
+      <h1>Let's Build Your Remote Team</h1>
+      <p>Whether you're looking to hire talent or explore opportunities, we're here to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="contact-page-section">
+    <div class="container">
+
+      <!-- Top Row: Contact Info + Map -->
+      <div class="contact-top-grid">
+        <div>
+          <h2 class="contact-heading">Get in Touch</h2>
+          <p class="contact-detail">United States</p>
+          <p class="contact-detail"><a href="tel:+16672562490">+1 (667) 256-2490</a></p>
+          <p class="contact-detail"><a href="mailto:info@naclremote.com">info@naclremote.com</a></p>
+          <div class="contact-social-icons">
+            <a href="#" aria-label="Instagram"><svg class="social-svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="X (Twitter)"><svg class="social-svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg class="social-svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="social-svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="social-svg" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793952.0349498086!2d-77.36842569!3d39.0457549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sMaryland%2C%20USA!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="NaCl Remote Location"></iframe>
+        </div>
+      </div>
+
+      <div class="contact-divider"></div>
+
+      <!-- Form -->
+      <div class="contact-form-grid">
+        <div class="contact-form-area">
+          <h2 class="form-heading">Send a Message</h2>
+          <p class="form-subtext">Please fill in the form below to get in touch with us.</p>
+          <form id="contactForm">
+            <div class="form-row-heirs">
+              <input type="text" id="contactName" name="name" required placeholder="Name">
+              <input type="email" id="contactEmail" name="email" required placeholder="Email">
+            </div>
+            <div class="form-group-heirs">
+              <input type="text" id="contactCompany" name="company" placeholder="Company">
+            </div>
+            <div class="form-group-heirs">
+              <textarea id="contactMessage" name="message" required placeholder="Message"></textarea>
+            </div>
+            <p class="form-terms">By clicking submit, you agree to our <a href="#">Terms</a> and <a href="#">Data Collection Clause</a>. You may receive notification from us and can opt out at any time.</p>
+            <button type="submit" class="btn-submit">SUBMIT</button>
+            <div id="formStatus" style="margin-top: 16px; font-size: 0.875rem; color: var(--green); display: none;"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Book a Call -->
+      <div class="book-call-section">
+        <h3>Book a Call</h3>
+        <p>Schedule a consultation to discuss your hiring needs.</p>
+        <a href="#" class="btn btn-primary btn-arrow" id="calendlyLink">Schedule a Consultation</a>
+        <p style="font-size: 0.8125rem; color: #aaa; margin-top: 12px;">[Calendly link coming soon]</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>Schedule a free, no-obligation consultation and let's discuss how NaCl Remote can support your business.</p>
+      <div class="cta-buttons">
+        <a href="mailto:info@naclremote.com" class="btn btn-gold btn-arrow">Email Us Directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="NaCl Remote" style="height:55px;width:auto;display:block;border-radius:6px;padding:4px;background:transparent;mix-blend-mode:screen;filter:invert(1) hue-rotate(180deg) brightness(1.5);">
+          </a>
+          <p>Connecting U.S. companies with high-performing remote talent from Kenya. Professional recruiting, rigorous vetting, and ongoing support.</p>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="hire-talent.html">Hire Talent</a></li>
+            <li><a href="for-talent.html">For Talent</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="hire-talent.html">Virtual Assistants</a></li>
+            <li><a href="hire-talent.html">Customer Support</a></li>
+            <li><a href="hire-talent.html">Digital Marketing</a></li>
+            <li><a href="hire-talent.html">Finance &amp; Bookkeeping</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li>United States</li>
+            <li><a href="tel:+16672562490">+1 (667) 256-2490</a></li>
+            <li><a href="mailto:info@naclremote.com">info@naclremote.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 NaCl Remote LLC. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('active')));
+    let lastScroll = 0;
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        nav.classList.add('nav-hidden');
+      } else {
+        nav.classList.remove('nav-hidden');
+      }
+      nav.style.boxShadow = currentScroll > 20 ? '0 2px 20px rgba(0,0,0,0.15)' : 'none';
+      lastScroll = currentScroll;
+    });
+
+    const form = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const email = document.getElementById('contactEmail').value;
+      const company = document.getElementById('contactCompany').value;
+      const message = document.getElementById('contactMessage').value;
+      const subject = encodeURIComponent(`NaCl Remote Inquiry from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company || 'N/A'}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:info@naclremote.com?subject=${subject}&body=${body}`;
+      formStatus.style.display = 'block';
+      formStatus.textContent = 'Opening your email client... If it doesn\'t open, please email us directly at info@naclremote.com';
+    });
+  </script>
+</body>
+</html>

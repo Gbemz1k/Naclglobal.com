@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hire vetted remote professionals from Kenya. Access top-performing talent for administrative, technical, and customer-facing roles at significantly reduced cost.">
+  <title>Hire Talent | NaCl Remote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2386bc25'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='black' font-family='Open Sans,sans-serif' font-size='14' font-weight='800'>Nr</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="NaCl Remote" style="height:55px;width:auto;display:block;border-radius:6px;padding:4px;background:transparent;mix-blend-mode:screen;filter:invert(1) hue-rotate(180deg) brightness(1.5);">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="hire-talent.html" class="active">Hire Talent</a>
+        <a href="for-talent.html">For Talent</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="btn nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label">For Employers</span>
+      <h1>Hire Remote Kenyan Talent with Confidence</h1>
+      <p>Access top-performing professionals for administrative, technical, and customer-facing roles at significantly reduced cost.</p>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <style>
+    .offer-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
+    .offer-text { display: flex; flex-direction: column; justify-content: center; padding: 64px 72px; }
+    @media (max-width: 768px) {
+      .offer-grid { grid-template-columns: 1fr; }
+      .offer-text { padding: 40px 24px; }
+    }
+  </style>
+  <section style="padding: 0; overflow: hidden;">
+    <div class="offer-grid">
+      <div style="overflow: hidden;">
+        <img src="fotografia-editorial-BYz4CNilsPY-unsplash.jpg" alt="Professional working remotely" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <div class="offer-text" style="background: var(--bg-gray);">
+        <h2 style="font-size: 2rem; margin-bottom: 16px; line-height: 1.25;">Vetted Talent Ready to Perform.</h2>
+        <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7; margin-bottom: 32px; max-width: 420px;">Each candidate goes through a rigorous evaluation process &mdash; from communication and technical screening to cultural alignment &mdash; before being presented to you.</p>
+        <div>
+          <a href="contact.html" class="btn btn-primary" style="padding: 14px 32px; font-size: 0.9375rem;">Schedule a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles We Support -->
+  <section class="section section-alt">
+    <div class="container">
+
+      <style>
+        .collection-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 32px;
+        }
+        .collection-title {
+          font-family: 'Open Sans', Aptos, Helvetica, sans-serif;
+          font-size: clamp(1.625rem, 3vw, 2.25rem);
+          font-weight: 300;
+          color: var(--black);
+          letter-spacing: -0.01em;
+          line-height: 1.2;
+        }
+        .collection-count {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: var(--text-secondary);
+          margin-left: 8px;
+        }
+        .collection-arrows {
+          display: flex;
+          gap: 8px;
+        }
+        .collection-arrow {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 2px solid var(--black);
+          background: transparent;
+          color: var(--black);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+          font-size: 1.125rem;
+        }
+        .collection-arrow:hover {
+          background: var(--black);
+          color: var(--white);
+        }
+        .collection-arrow:disabled {
+          opacity: 0.3;
+          cursor: default;
+        }
+        .collection-arrow:disabled:hover {
+          background: transparent;
+          color: var(--black);
+        }
+        .collection-track {
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          margin: 0 -16px;
+          padding: 8px 16px 16px;
+        }
+        .collection-track::-webkit-scrollbar {
+          display: none;
+        }
+        .collection-wrapper {
+          display: flex;
+          gap: 20px;
+          width: fit-content;
+        }
+        .collection-card {
+          width: 300px;
+          min-width: 300px;
+          overflow: hidden;
+          scroll-snap-align: start;
+          transition: transform 0.25s;
+          display: flex;
+          flex-direction: column;
+        }
+        .collection-card:hover {
+          transform: translateY(-4px);
+        }
+        .collection-card-image {
+          height: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+        .collection-card-image svg {
+          width: 56px;
+          height: 56px;
+          opacity: 0.7;
+        }
+        .collection-card-body {
+          background: var(--deep-blue);
+          padding: 24px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        .collection-card-body h4 {
+          color: var(--white);
+          font-size: 1.0625rem;
+          margin-bottom: 10px;
+          line-height: 1.3;
+        }
+        .collection-card-body p {
+          color: rgba(255,255,255,0.55);
+          font-size: 0.8125rem;
+          line-height: 1.6;
+          margin-bottom: 16px;
+          flex: 1;
+        }
+        .collection-card-tag {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.6875rem;
+          font-weight: 600;
+          color: rgba(255,255,255,0.4);
+          text-transform: uppercase;
+          letter-spacing: 0.04em;
+        }
+        .collection-card-tag::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: var(--green);
+        }
+        @media (max-width: 768px) {
+          .collection-card {
+            width: 260px;
+            min-width: 260px;
+          }
+          .collection-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+          }
+        }
+      </style>
+
+      <div class="collection-header">
+        <h2 class="collection-title">Roles We Support <span class="collection-count">(7 Roles)</span></h2>
+        <div class="collection-arrows">
+          <button class="collection-arrow" id="scrollLeft" aria-label="Scroll left">&#8592;</button>
+          <button class="collection-arrow" id="scrollRight" aria-label="Scroll right">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="collection-track" id="collectionTrack">
+        <div class="collection-wrapper">
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #0a1628 0%, #122244 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Virtual &amp; Executive Assistants</h4>
+              <p>Calendar management, email handling, research, travel coordination, and executive support.</p>
+              <span class="collection-card-tag">Administration</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Administrative &amp; Operations Support</h4>
+              <p>Data entry, document management, scheduling, and day-to-day office operations.</p>
+              <span class="collection-card-tag">Operations</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #122244 0%, #1a3a6b 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Customer Support &amp; Help Desk</h4>
+              <p>Responsive, professional customer service via phone, email, and live chat.</p>
+              <span class="collection-card-tag">Customer Service</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #0a1628 0%, #122244 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Digital Marketing &amp; Social Media</h4>
+              <p>Content creation, social media management, SEO, and campaign execution.</p>
+              <span class="collection-card-tag">Marketing</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #122244 0%, #1a3a6b 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Data Analyst</h4>
+              <p>Data collection, analysis, reporting, dashboards, and business intelligence support.</p>
+              <span class="collection-card-tag">Analytics</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #0a1628 0%, #1a3a6b 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Junior Developers &amp; QA Support</h4>
+              <p>Web development, app support, QA testing, and technical assistance.</p>
+              <span class="collection-card-tag">Technology</span>
+            </div>
+          </div>
+
+          <div class="collection-card">
+            <div class="collection-card-image" style="background: linear-gradient(135deg, #122244 0%, #1a3a6b 100%);">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <div class="collection-card-body">
+              <h4>Finance &amp; Bookkeeping</h4>
+              <p>Financial record-keeping, invoicing, accounts payable/receivable, and reporting.</p>
+              <span class="collection-card-tag">Finance</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.getElementById('collectionTrack');
+      const leftBtn = document.getElementById('scrollLeft');
+      const rightBtn = document.getElementById('scrollRight');
+      const scrollAmount = 320;
+      leftBtn.addEventListener('click', () => track.scrollBy({ left: -scrollAmount, behavior: 'smooth' }));
+      rightBtn.addEventListener('click', () => track.scrollBy({ left: scrollAmount, behavior: 'smooth' }));
+    })();
+  </script>
+
+  <!-- Cost Efficiency -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col-image" style="background: var(--black); border: none;">
+          <div style="padding: 48px; text-align: center; width: 100%;">
+            <p style="color: var(--green); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px;">Cost Comparison</p>
+            <div style="margin-bottom: 28px;">
+              <p style="color: var(--light-gray); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Virtual Assistant</p>
+              <p style="color: var(--medium-gray); font-size: 0.875rem; margin: 0 auto;">U.S.: $50,000&ndash;$70,000</p>
+              <p style="color: var(--green); font-size: 1.125rem; font-weight: 700; margin: 0 auto;">Kenya: $12,000&ndash;$20,000</p>
+            </div>
+            <div>
+              <p style="color: var(--light-gray); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Junior Developer</p>
+              <p style="color: var(--medium-gray); font-size: 0.875rem; margin: 0 auto;">U.S.: $90,000&ndash;$130,000</p>
+              <p style="color: var(--green); font-size: 1.125rem; font-weight: 700; margin: 0 auto;">Kenya: $18,000&ndash;$30,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="two-col-text">
+          <span class="section-label">Cost Efficiency</span>
+          <h2>Substantial Savings, Maintained Quality</h2>
+          <p>Hiring from Kenya enables substantial cost savings while maintaining quality. Reduce staffing costs by 45&ndash;70% across key roles without compromising on performance.</p>
+          <ul class="check-list">
+            <li>No expensive recruitment agency fees</li>
+            <li>No benefits overhead (health insurance, 401k, etc.)</li>
+            <li>No office space or equipment costs</li>
+            <li>Flexible scaling up or down as needed</li>
+            <li>Transparent, predictable pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="section section-alt section-center">
+    <div class="container">
+      <span class="section-label">Our Process</span>
+      <h2 class="section-title">Fast. Structured. Reliable.</h2>
+      <p class="section-desc"></p>
+      <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">1.</span> Discovery</h3>
+          <p>Understand your needs and expectations.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">2.</span> Sourcing</h3>
+          <p>Screen 30&ndash;50 candidates per role.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">3.</span> Shortlist</h3>
+          <p>Present top 3&ndash;5 candidates.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">4.</span> Interviews</h3>
+          <p>You select your preferred candidate.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">5.</span> Onboarding</h3>
+          <p>We support setup and alignment.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">6.</span> Ongoing Support</h3>
+          <p>Performance check-ins and guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & Infrastructure -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col-text">
+          <span class="section-label">Support &amp; Infrastructure</span>
+          <h2>We Assist With Everything You Need</h2>
+          <p>Beyond recruiting, we provide the infrastructure and support to make your international hiring seamless.</p>
+          <ul class="check-list">
+            <li>Contracts and NDAs</li>
+            <li>Onboarding guidance</li>
+            <li>International payment coordination</li>
+            <li>Time tracking and performance monitoring</li>
+          </ul>
+        </div>
+        <div class="two-col-image" style="border: none;">
+          <img src="abhishek-umrao-oN26_t4v7tw-unsplash.jpg" alt="Team collaboration" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Get Your First Shortlist Within Days</h2>
+      <p>Hire remote talent with confidence.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-gold btn-arrow">Schedule a Consultation</a>
+        <a href="about.html" class="btn btn-secondary">About Our Company</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="NaCl Remote" style="height:55px;width:auto;display:block;border-radius:6px;padding:4px;background:transparent;mix-blend-mode:screen;filter:invert(1) hue-rotate(180deg) brightness(1.5);">
+          </a>
+          <p>Connecting U.S. companies with high-performing remote talent from Kenya. Professional recruiting, rigorous vetting, and ongoing support.</p>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="hire-talent.html">Hire Talent</a></li>
+            <li><a href="for-talent.html">For Talent</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="hire-talent.html">Virtual Assistants</a></li>
+            <li><a href="hire-talent.html">Customer Support</a></li>
+            <li><a href="hire-talent.html">Digital Marketing</a></li>
+            <li><a href="hire-talent.html">Finance &amp; Bookkeeping</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li>United States</li>
+            <li><a href="tel:+16672562490">+1 (667) 256-2490</a></li>
+            <li><a href="mailto:info@naclremote.com">info@naclremote.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 NaCl Remote LLC. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('active')));
+    let lastScroll = 0;
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        nav.classList.add('nav-hidden');
+      } else {
+        nav.classList.remove('nav-hidden');
+      }
+      nav.style.boxShadow = currentScroll > 20 ? '0 2px 20px rgba(0,0,0,0.15)' : 'none';
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>
