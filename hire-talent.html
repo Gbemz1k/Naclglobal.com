@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2386bc25'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='black' font-family='Open Sans,sans-serif' font-size='14' font-weight='800'>Nr</text></svg>">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 
@@ -47,7 +48,7 @@
     .offer-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
     .offer-text { display: flex; flex-direction: column; justify-content: center; padding: 64px 72px; }
     @media (max-width: 768px) {
-      .offer-grid { grid-template-columns: 1fr; }
+      .offer-grid { grid-template-columns: 1fr; min-height: auto; }
       .offer-text { padding: 40px 24px; }
     }
   </style>
@@ -359,7 +360,7 @@
       <span class="section-label">Our Process</span>
       <h2 class="section-title">Fast. Structured. Reliable.</h2>
       <p class="section-desc"></p>
-      <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="card-grid card-grid-3">
         <div class="card" style="text-align: center;">
           <h3><span style="color: var(--green); font-size: 1.75rem; font-weight: 300;">1.</span> Discovery</h3>
           <p>Understand your needs and expectations.</p>
