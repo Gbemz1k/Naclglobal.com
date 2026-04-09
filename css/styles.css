@@ -1246,6 +1246,14 @@ p {
     display: block;
   }
 
+  .nav-logo img {
+    height: 38px !important;
+    padding: 2px !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    mix-blend-mode: screen !important;
+  }
+
   .hero {
     min-height: 100vh;
     padding: 0;
